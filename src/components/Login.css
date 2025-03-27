@@ -1,0 +1,90 @@
+/* ===== Apply styles only inside the Login Page ===== */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+/* ===== Login Container ===== */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* ===== Heading ===== */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+/* ===== Input Fields ===== */
+.login-container .input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input Field Focus Effect */
+.login-container .input-field:focus {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Placeholder Styling */
+.login-container ::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== Button Styling ===== */
+.login-container .login-button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container .login-button:hover {
+  background: #0056b3;
+}
+
+/* Button Disabled State */
+.login-container .login-button:disabled {
+  background: #888;
+  cursor: not-allowed;
+}
+
+/* ===== Error Message Styling ===== */
+.login-container .error-message {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* ===== Responsive Design for Mobile Screens ===== */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 30px;
+  }
+}
